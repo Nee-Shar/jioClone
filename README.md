@@ -11,5 +11,4 @@ Build using HTML , CSS , JS Along with Bootstrap 5
 ![Screenshot (273)](https://github.com/Nee-Shar/jioClone/assets/99169026/8f6179aa-683c-465b-bb36-2800bd36e248)
 ![Screenshot (274)](https://github.com/Nee-Shar/jioClone/assets/99169026/2340aee8-9184-4524-b995-e018a4b7bc90)
 
-
-Deployment not possible as google flags clone website as potential Plag website and automatically turns down the site. So try running locally.
+Site Deployed at : https://nee-shar.github.io/jioClone/
