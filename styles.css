@@ -1,0 +1,314 @@
+body {
+  overflow-x: hidden; /* Disable horizontal scrolling on the body */
+}
+.tex-white {
+  color: white !important;
+}
+.font-type-nav {
+  font-family: helvetica, arial, sans-serif;
+  font-weight: 700 !important;
+  text-transform: none;
+  font-size: 1rem;
+  letter-spacing: -0.08px;
+  line-height: 1.5;
+}
+
+.intro {
+  background-image: url("https://jep-asset.akamaized.net/cms/assets/airfiber/AirFiber-DetailPage-Banner-Desktop.webp");
+  background-size: auto; /* Ensure the entire background image is contained within the div */
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  height: 66vh; /* Set a percentage-based height (50% of the viewport height in this case) */
+  min-height: 200px; /* Set a minimum height to ensure it's not too small */
+  background-position: center; /* Center the background image both horizontally and vertically */
+}
+
+.intro-font-1 {
+  font-family: helvetica, arial, sans-serif;
+  font-weight: 900;
+  text-transform: none;
+  font-size: 4rem;
+  letter-spacing: -1.92px;
+  line-height: 1;
+  color: white;
+}
+
+.sub-intro-text {
+  font-family: helvetica, arial, sans-serif;
+  font-weight: 500 !important;
+  text-transform: none;
+  font-size: 1.5rem;
+  letter-spacing: -0.12px;
+  line-height: 1.3333333333;
+}
+.containerTown {
+  height: 70vh;
+  width: 1200px;
+  border-radius: 20px;
+  margin: auto;
+
+  background-color: #0c5273;
+}
+.containerServices {
+  height: auto;
+  width: 1200px;
+  border-radius: 20px;
+  margin: auto;
+}
+.towns-font {
+  font-family: helvetica, arial, sans-serif;
+  font-weight: 900;
+  text-transform: none;
+  color: white;
+  font-size: 2.5rem;
+  letter-spacing: -1.2px;
+  line-height: 1;
+}
+.towns-sub-font {
+  color: white;
+  font-family: helvetica, arial, sans-serif;
+  font-weight: 500;
+  text-transform: none;
+  font-size: 1.125rem;
+  letter-spacing: -0.09px;
+  line-height: 1.3333333333;
+}
+.btnX {
+  border: 1px solid white;
+  border-radius: 100px;
+  color: white;
+  background-color: transparent;
+  font-size: medium;
+  padding: 1%;
+}
+.btnX:hover {
+  background-color: #043a53; /* Replace with your desired darker blue color */
+  color: #ffffff; /* Set the text color for better visibility on the darker background */
+}
+.font-type-serv {
+  font-family: helvetica, arial, sans-serif;
+  font-weight: 900;
+  text-transform: none;
+  font-size: 4rem;
+  letter-spacing: -1.92px;
+  line-height: 1;
+}
+.font-type-subserv {
+  font-family: helvetica, arial, sans-serif;
+  font-weight: bold;
+  text-transform: none;
+  font-size: 1.125rem;
+  letter-spacing: -0.09px;
+  line-height: 1.3333333333;
+  color: rgb(95, 93, 93);
+}
+.enter-font {
+  font-family: helvetica, arial, sans-serif;
+  font-weight: 900;
+  text-transform: none;
+  font-size: 2rem;
+  letter-spacing: -0.96px;
+  line-height: 1;
+}
+
+/* Pricing component */
+
+.pricing1 .btn-md {
+  padding: 15px 30px;
+  font-size: 16px;
+}
+
+.pricing1 .onoffswitch {
+  width: 70px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  margin: 0 auto;
+}
+
+.pricing1 .onoffswitch-label {
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 20px;
+}
+
+.pricing1 .onoffswitch-inner {
+  width: 200%;
+  margin-left: -100%;
+  -webkit-transition: margin 0.3s ease-in 0s;
+  -o-transition: margin 0.3s ease-in 0s;
+  transition: margin 0.3s ease-in 0s;
+}
+
+.pricing1 .onoffswitch-inner::before,
+.pricing1 .onoffswitch-inner::after {
+  display: block;
+  float: left;
+  width: 50%;
+  height: 30px;
+  padding: 0;
+  line-height: 30px;
+  font-size: 14px;
+  color: white;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.pricing1 .onoffswitch-inner::before {
+  content: "";
+  padding-right: 27px;
+  background-color: #0f3cc9;
+  color: #ffffff;
+}
+
+.pricing1 .onoffswitch-inner::after {
+  content: "";
+  padding-right: 24px;
+  background-color: #3e4555;
+  color: #999999;
+  text-align: right;
+}
+
+.pricing1 .onoffswitch-switch {
+  width: 23px;
+  margin: 6px;
+  height: 23px;
+  top: -1px;
+  bottom: 0;
+  right: 35px;
+  border-radius: 20px;
+  -webkit-transition: all 0.3s ease-in 0s;
+  -o-transition: all 0.3s ease-in 0s;
+  transition: all 0.3s ease-in 0s;
+}
+
+.pricing1
+  .onoffswitch-checkbox:checked
+  + .onoffswitch-label
+  .onoffswitch-inner {
+  margin-left: 0;
+}
+
+.pricing1
+  .onoffswitch-checkbox:checked
+  + .onoffswitch-label
+  .onoffswitch-switch {
+  right: 0px;
+}
+
+.pricing1 .price-badge {
+  top: -13px;
+  left: 0;
+  right: 0;
+  width: 100px;
+  margin: 0 auto;
+}
+
+.pricing1 .badge-inverse {
+  background-color: #3e4555;
+}
+
+.pricing1 .display-5 {
+  font-size: 3rem;
+  color: #263238;
+  font-family: helvetica, arial, sans-serif;
+  font-weight: 900;
+  text-transform: none;
+  font-size: 4rem;
+  letter-spacing: -1.92px;
+  line-height: 1;
+}
+
+.pricing1 .pricing sup {
+  font-size: 18px;
+  top: -20px;
+}
+
+.pricing1 .pricing .yearly {
+  display: none;
+}
+
+.FAQ__accordian {
+  width: 100%;
+}
+.FAQ__title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  font-size: 18px;
+  background-color: #ffffff;
+  border: 1px solid #f0e6e6;
+  color: black;
+}
+
+.FAQ__visible {
+  background-color: #fffdfd;
+  border-top: 1px solid rgb(238, 230, 230);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.FAQ__visible > p {
+  margin: 1rem;
+}
+.FAQ__list__container {
+  border-top: 8px solid #222;
+  padding: 2rem 0;
+}
+.FAQ__heading {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 600;
+  margin: 1rem 3rem;
+}
+
+.FAQ__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.FAQ__get__started__email {
+  text-align: center;
+}
+
+.FAQ__get__started__email > h3 {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 2rem 0;
+}
+
+footer {
+  border-top: 8px solid #333;
+  padding: 2rem 1rem;
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer__row__2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.footer__row__1 > h4 {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.footer__row__3 > .dropdown__container {
+  width: fit-content;
+  border: 1px solid #757575;
+  color: #757575;
+}
+
+.footer__row__3 > .dropdown__container > .language__drop__down {
+  color: #757575;
+}

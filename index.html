@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top" style="background-color: #0f3cc9;">
+      <div class="container-fluid">
+        <svg
+          style="max-height: 40px; margin-left: 10%;"
+          viewBox="0 0 24 24"
+          
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect width="24" height="24" rx="12" fill="currentColor"></rect>
+          <path
+            d="M17.587 14.559c-.883 0-1.49-.648-1.49-1.574 0-.912.62-1.56 1.49-1.56s1.491.648 1.491 1.573c0 .897-.634 1.56-1.49 1.56zm.03-5.152c-2.265 0-3.772 1.437-3.772 3.576 0 2.195 1.451 3.604 3.729 3.604 2.264 0 3.755-1.409 3.755-3.59 0-2.153-1.475-3.59-3.713-3.59zM11.78 6.272c-.856 0-1.395.483-1.395 1.243 0 .774.552 1.257 1.435 1.257.857 0 1.395-.483 1.395-1.257 0-.773-.552-1.243-1.435-1.243zm.152 3.204h-.277c-.675 0-1.187.317-1.187 1.285v4.42c0 .98.496 1.284 1.216 1.284h.275c.677 0 1.16-.33 1.16-1.285v-4.419c0-.995-.47-1.285-1.187-1.285zM8.316 7.392h-.4c-.76 0-1.174.43-1.174 1.285v4.13c0 1.063-.36 1.436-1.2 1.436-.662 0-1.201-.29-1.63-.816C3.87 13.373 3 13.786 3 14.81c0 1.104 1.035 1.781 2.955 1.781 2.334 0 3.563-1.173 3.563-3.742V8.675c0-.856-.413-1.283-1.202-1.283z"
+            fill="#fff"
+          ></path>
+        </svg>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active ms-5 tex-white font-type-nav" href="#">Mobile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active ms-3 tex-white font-type-nav" href="#">True 5G</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active ms-3 tex-white font-type-nav" href="#">JioFiber</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link active ms-3 tex-white font-type-nav" href="#"><u> AirFiber </u></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active ms-3 tex-white font-type-nav" href="#">Business</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active ms-3 tex-white font-type-nav" href="#">Devices</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active ms-3 tex-white font-type-nav" href="#">Apps</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active ms-3 tex-white font-type-nav" href="#">Support</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active ms-3 tex-white font-type-nav" href="#"></a>
+            </li><li class="nav-item">
+              <a class="nav-link active ms-3 tex-white font-type-nav" href="#"></a>
+            </li><li class="nav-item">
+              <a class="nav-link active ms-3 tex-white font-type-nav" href="#"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active ms-3 tex-white font-type-nav" href="#"></a>
+            </li>
+        </ul>
+             <ul class="navbar-nav  ms-5" >
+                <li class="nav-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#ffffff" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                  </svg>
+                </li>
+
+<!-- 
+   
+ --><li class="nav-item">
+  <a class="nav-link active ms-2 tex-white font-type-nav" href="#"></a>
+</li>
+
+
+                <li class="nav-item ms-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="#FFFFFF" class="bi bi-person-fill" viewBox="0 0 16 16">
+                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                  </svg>
+                </li>
+            </ul>
+   
+
+           
+             
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="row intro " >
+      <div class="col-12 col-md-8" style="margin-left: 10%;"></div>
+      <div class="col-12 col-md-8 intro-font-1 " style="margin-left: 9%;">Introducing 
+        <br>JioAirFiber
+        <br>
+        <span class="sub-intro-text">India's latest home entertainment and Wi-Fi service.</span>
+       
+        <div class="col-4">
+          <button type="button" class="btn btn-primary btn-md" style="margin-top: 10%; background-color: #0f3cc9; border-radius: 100px;">Book Now</button>
+            
+            <button type="button" class="btn btn-primary btn-md btn-outline-light" style="margin-top: 10%; background-color: transparent; border-radius: 100px;">Watch Features</button>
+        </div>
+      </div>
+      
+      <div class="col-12 col-md-6" style="margin-left: 10%;">
+      
+          </div>
+</div>
+    
+
+
+
+
+
+    
+
+<div class="containerTown mt-4">
+<div class="row text-center ">
+  <div class="col-12 mt-5">
+    <img src="https://jep-asset.akamaized.net/jiostaticresources/v05/images/home/airfiber-icon.svg" alt="AirFiber Icon">
+  </div>
+</div>
+
+<div class="row text-center mt-3">
+  <div class="col-12 towns-font ">
+    JioAirFiber is now available in 494
+  </div>
+</div>
+
+<div class="row text-center">
+  <div class="col-12 towns-font">
+    towns.
+  </div>
+  </div>
+
+
+  <div class="row text-center">
+    <div class="col-12 towns-sub-font mt-3">
+      Check the availablility in your location.
+      
+    </div>
+    <div class="row text-center">
+      <div class="col-12 towns-sub-font mt-3">
+        <div class="dropdown">
+          <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Select Your State
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+          
+        </div>
+      </div>
+        
+    </div>
+         
+      
+    <div class="row text-center">
+      <div class="col-12 towns-font">
+        <button type="button" class=" mt-2 btnX">Get JioAirFiber</button>
+          
+      </div>
+      </div>
+      <img role="img" src="https://jep-asset.akamaized.net/cms/assets/airfiber/ribbon-arifiber.png" alt="JioAirFiber" title="JioAirFiber" style="width: 100%;" class="mt-2">
+</div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+<div class="containerServices mt-5">
+  <div class="row text-center ">
+    <div class="col-12 mt-5 font-type-serv">
+      JioAirFiber services</div>
+  </div>
+  <div class="row text-center ">
+    <div class="col-12 mt-5 font-type-subserv">
+      The best-in-class value proposition</div>
+  </div>
+</div>
+
+
+
+
+
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col enter-font mt-5">
+      <br>
+      Digital Entertainment
+        <div class="row  font-type-subserv mt-4 ms-2">• Leading 550+ digital TV channels</div>
+        
+        <div class="row font-type-subserv ms-2"> • Catch-up TV to watch missed episodes later</div>
+        <div class="row font-type-subserv ms-2"> • Subscriptions to the most popular 15+ OTT apps
+        </div>
+    </div>
+    <div class="col">
+      <img role="img" src="https://jep-asset.akamaized.net/cms/assets/airfiber/jioairfiber-features-11.png" alt="Digital Entertainment" title="Digital Entertainment" style="width: 80%; height: 350px;">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="container mt-5">
+  <div class="row mt-5">
+    <div class="col mt-5">
+     <img src="https://jep-asset.akamaized.net/cms/assets/airfiber/jioairfiber-features-1.webp" style="height: 350px;">
+    </div>
+    <div class="col enter-font mt-5">
+      <br>
+      <br>
+      Broadband Connection
+      <div class="row  font-type-subserv mt-4 ms-2"> • Wi-Fi connectivity and high speed internet</div>
+      
+      <div class="row font-type-subserv ms-2"> • Strong signal everywhere in your home</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col enter-font mt-5">
+      Smart Home Services
+        <div class="row  font-type-subserv mt-4 ms-2"> • Powers your surveillance, healthcare, smart home IoT, gaming, and home   networking systems
+          </div>
+        
+        <div class="row font-type-subserv ms-2"> • Enables Cloud PC for education and work-from-home</div>
+     
+    </div>
+    <div class="col">
+      <img role="img" src="https://jep-asset.akamaized.net/cms/assets/airfiber/jioairfiber-features-2.webp" alt="Digital Entertainment" title="Digital Entertainment" style="width: 80%; height: 350px;">
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="container mt-5">
+  <div class="row mt-5">
+    <div class="col mt-5">
+     <img src="https://jep-asset.akamaized.net/cms/assets/airfiber/jioairfiber-features-3.webp" style="height: 350px;">
+    </div>
+    <div class="col enter-font mt-4">
+      <br>
+      <br><br><br>
+      Home devices at no extra cost
+      <div class="row  font-type-subserv  ms-2"> 
+     
+    
+      <div class="row  font-type-subserv mt-5 ms-2"> • Latest Wi-Fi router for coverage everywhere in your home
+     
+       </div>
+      
+      <div class="row font-type-subserv ms-2"> • 4K smart set-top box</div>
+      
+      <div class="row font-type-subserv ms-2"> • Voice active remote </div>
+      </div>
+          
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="pricing1 py-4 bg-light mt-5 ms-4" style="background-color: #e7ebf8;" >
+  <div class="container ">
+    <div class="row justify-content-center ms-4">
+      <div class="col-md-8 text-center">
+        <h3 class="mt-3 font-weight-medium mb-1 font-type-serv ">JioAirFiber plans</h3>
+        <h6 class="subtitle mt-3 font-type-subserv" >Find a perfect plan to go with your digital aspirations.
+
+        </h6>
+        <div class="switcher-box mt-4 d-flex align-items-center justify-content-center">
+          <span class="font-14 font-weight-medium">AirFiber</span>
+          <div class="onoffswitch position-relative mx-2">
+            <input type="checkbox" name="onoffswitch1" class="onoffswitch-checkbox d-none" id="myonoffswitch1">
+            <label class="onoffswitch-label d-block overflow-hidden" for="myonoffswitch1">
+							<span class="onoffswitch-inner d-block"></span>
+							<span class="onoffswitch-switch d-block bg-white position-absolute"></span>
+						</label>
+          </div>
+          <span class="font-14 font-weight-medium">AirFiber Max</span>
+        </div>
+      </div>
+    </div>
+    <!-- Row  -->
+    <div class="row mt-5 ms-4">
+      <!-- Column -->
+      <div class="col-lg-3 col-md-6 ms-4">
+        <div class="card text-center card-shadow on-hover border-0 mb-4">
+          <div class="card-body font-14">
+            <div class="pricing my-3">
+              
+              <span class="monthly display-5 font-type-serv ">₹599</span> <br>
+              <span class=" yearly display-5 font-type-serv">₹1499</span> <br>
+              
+              <span class="font-type-subserv monthly">6/12 months plans available for new customers</span>
+              <span class="yearly font-type-subserv ">6/12 months plans available for new customers</span>
+              <small class="monthly"></small>
+              <small class="yearly"></small>
+             </div>
+            <ul class="list-inline">
+              <li class="d-block py-2"><strong>Validity</strong>: Bill Cycle</li>
+              <li class="d-block py-2"><strong>Data:</strong> 1000GB @ <span class="monthly">30Mbps </span> </li>
+              
+              <li class="d-block py-2">
+
+                <img src="https://jep-asset.akamaized.net/jio/svg/logo/jiocinema-n.svg" alt="JioCinema" style="width:40px; height:40px;">
+
+                <span class="j-icon" style="--icon-size-svg: 100%; --icon-size: var(--spacing-xl);"><img src="https://jep-asset.akamaized.net/jiocom/static/images/Z0073.svg" alt="Sony Liv" style="width: 40px ; height: 40px;"></span>
+                <span class="j-icon" style="--icon-size-svg: 100%; --icon-size: var(--spacing-xl);"><img src="	https://jep-asset.akamaized.net/jiocom/static/images/Z0127.svg" alt="Disney+ Hotstar" style="width: 40px ; height: 40px;"></span>
+                +10 More
+              </li>
+              <button type="button" class="btn btn-primary">View Details</button>
+              <li class="d-block py-2">&nbsp;</li>
+              <li class="d-block py-2">&nbsp;</li>
+            </ul>
+            <div class="bottom-btn">
+              <a class="btn btn-success-gradiant btn-md text-white btn-block" href="#f1"><span>Choose Plan</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Column -->
+      <div class="col-lg-3 col-md-6 mb-4" style="margin-left: 10%;">
+        <div class="card text-center card-shadow on-hover border-0 mb-4">
+          <div class="card-body font-14">
+            <div class="pricing my-3">
+              
+              <span class="monthly display-5 font-type-serv ">₹899</span> <br>
+              <span class=" yearly display-5 font-type-serv">₹2499</span> <br>
+              
+              <span class="font-type-subserv monthly">6/12 months plans available for new customers</span>
+              <span class="yearly font-type-subserv ">6/12 months plans available for new customers</span>
+              <small class="monthly"></small>
+              <small class="yearly"></small>
+             </div>
+            <ul class="list-inline">
+              <li class="d-block py-2"><strong>Validity</strong>: Bill Cycle</li>
+              <li class="d-block py-2"><strong>Data:</strong> 1000GB @ <span class="monthly">500Mbps </span> </li>
+              
+              <li class="d-block py-2">
+
+                <img src="https://jep-asset.akamaized.net/jio/svg/logo/jiocinema-n.svg" alt="JioCinema" style="width:40px; height:40px;">
+
+                <span class="j-icon" style="--icon-size-svg: 100%; --icon-size: var(--spacing-xl);"><img src="https://jep-asset.akamaized.net/jiocom/static/images/Z0073.svg" alt="Sony Liv" style="width: 40px ; height: 40px;"></span>
+                <span class="j-icon" style="--icon-size-svg: 100%; --icon-size: var(--spacing-xl);"><img src="	https://jep-asset.akamaized.net/jiocom/static/images/Z0127.svg" alt="Disney+ Hotstar" style="width: 40px ; height: 40px;"></span>
+                +10 More
+              </li>
+              <button type="button" class="btn btn-primary">View Details</button>
+              <li class="d-block py-2">&nbsp;</li>
+              <li class="d-block py-2">&nbsp;</li>
+            </ul>
+            <div class="bottom-btn">
+              <a class="btn btn-success-gradiant btn-md text-white btn-block" href="#f1"><span>Choose Plan</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Column -->
+      <div class="col-lg-3 col-md-6  mb-4" style="margin-left: 10%;">
+        <div class="card text-center card-shadow on-hover border-0 mb-4">
+          <div class="card-body font-14">
+            <div class="pricing my-3">
+              
+              <span class="monthly display-5 font-type-serv ">₹1199</span> <br>
+              <span class=" yearly display-5 font-type-serv">₹3999</span> <br>
+              
+              <span class="font-type-subserv monthly">6/12 months plans available for new customers</span>
+              <span class="yearly font-type-subserv ">6/12 months plans available for new customers</span>
+              <small class="monthly"></small>
+              <small class="yearly"></small>
+             </div>
+            <ul class="list-inline">
+              <li class="d-block py-2"><strong>Validity</strong>: Bill Cycle</li>
+              <li class="d-block py-2"><strong>Data:</strong> 1000GB @ <span class="monthly">1Gbps </span> </li>
+              
+              <li class="d-block py-2">
+
+                <img src="https://jep-asset.akamaized.net/jio/svg/logo/jiocinema-n.svg" alt="JioCinema" style="width:40px; height:40px;">
+
+                <span class="j-icon" style="--icon-size-svg: 100%; --icon-size: var(--spacing-xl);"><img src="https://jep-asset.akamaized.net/jiocom/static/images/Z0073.svg" alt="Sony Liv" style="width: 40px ; height: 40px;"></span>
+                <img src="https://jep-asset.akamaized.net/jiocom/static/images/Z0071.svg" alt="Amazon Prime" class="css-hsrxm6" style="width: 40px; height: 40px;">
+                +10 More
+              </li>
+              <button type="button" class="btn btn-primary">View Details</button>
+              <li class="d-block py-2">&nbsp;</li>
+              <li class="d-block py-2">&nbsp;</li>
+            </ul>
+            <div class="bottom-btn">
+              <a class="btn btn-success-gradiant btn-md text-white btn-block" href="#f1"><span>Choose Plan</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Column -->
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<section class="mt-2 text-center" style="margin-left: 10%; margin-right: 10%;">
+  <h1 class="font-type-serv ms-4 text-center">JioAirFiber FAQ</h1>
+  <div class="FAQ__list text-center">
+    <div class="FAQ__accordian text-center">
+      <button class="FAQ__title">
+        What is JioAirFiber ?<i class="fal fa-plus"></i>
+      </button>
+      <div class="FAQ__visible">
+        <p>
+          JioAirFiber is a home broadband solution, offering internet
+          speeds up to 1Gbps, along with a bouquet of digital services
+          like digital content, IoT, home automation, surveillance
+          solutions, and much more.
+        </p>
+        <p>
+          Broadband: With indoor Wi-Fi service, you enjoy Jio's reliable Wi-Fi connectivity and high-speed broadband experience everywhere in your home and business premises.
+
+
+Smart Home Service: Enables the following smart systems at your home for an exceptional smart living experience.
+Cloud PC for education and work-from-home
+Security and surveillance solutions
+Healthcare
+Education
+Smart Home IoT
+Gaming
+Home networking
+
+        </p>
+      </div>
+    </div>
+    <div class="FAQ__accordian">
+      <button class="FAQ__title">
+        I already have a JioFiber connection. Can I switch to JioAirFiber?<i class="fal fa-plus"></i>
+      </button>
+      <div class="FAQ__visible">
+        <p>
+          JioFiber provides the best-in-class service experience for connectivity and entertainment services. However, you can still opt for JioAirFiber as an additional high-quality backup service.
+        </p>
+      </div>
+    </div>
+    <div class="FAQ__accordian">
+      <button class="FAQ__title">
+        How to get a new JioAirFiber connection?<i class="fal fa-plus"></i>
+      </button>
+      <div class="FAQ__visible">
+        <p>
+          Step 1: Connect with us
+Give a missed call on 60008-60008 to book via WhatsApp
+Go to our website:https://www.jio.com/selfcare/interest/airfiber
+Visit your nearest Jio Store
+Step 2: Complete the booking process
+Register for JioAirFiber services in a few quick and easy steps online or offline.
+Step 3: Get Confirmation
+We will get in touch with you and connect your home on priority as soon as services are available in your locality.
+        </p>
+        <p>
+        </p>
+      </div>
+    </div>
+    <div class="FAQ__accordian">
+      <button class="FAQ__title">
+        How do I check if JioAirFiber is available in my city?<i class="fal fa-plus"></i>
+      </button>
+      <div class="FAQ__visible">
+        <p>
+          You can check the availability of JioAirFiber in your city in a few simple steps. Just click on this link https://www.jio.com/jcms/airfiber/ and check if your city's name is there.
+        </p>
+      </div>
+    </div>
+    <div class="FAQ__accordian">
+      <button class="FAQ__title">
+        What can I watch from Netflix?<i class="fal fa-plus"></i>
+      </button>
+      <div class="FAQ__visible">
+        <p>
+        </p>
+      </div>
+    </div>
+    <div class="FAQ__accordian">
+      <button class="FAQ__title">
+        What is the difference between JioAirFiber and JioFiber?<i class="fal fa-plus"></i>
+      </button>
+      <div class="FAQ__visible">
+        <p>JioAirFiber will provide best-in-class value propositions and plans, just like JioFiber.
+        </p>
+        <p>
+        </p>
+      </div>
+    </div>
+  </div>
+ 
+  </div>
+</section>
+
+
+
+
+
+  <div class="footer__row__1  mt-5">
+  
+  </div>
+  <div class="footer__row__2">
+    <div class="column__1">
+      <p style="font-weight: bold;"> Our offering</p>
+      <p>Prepaid</p>
+      <p> Post Paid</p>
+      <p>Services</p>
+      <p>Devices</p>
+    </div>
+    <div class="column__2">
+      <p style="font-weight: bold;">Support </p>
+      <p>Track Order</p>
+      <p>Relocate JioFiber</p>
+      <p>My Account</p>
+      <p>FAQ</p>
+      <p>Locate us</p>
+    </div>
+    <div class="column__3">
+      <p style="font-weight: bold;">Our Company </p>
+      <p>Reliance Industries</p>
+      <p>Reliance Foundation</p>
+      <p>JioLife</p>
+      <p>Carrers</p>
+      <p>Investor relations</p>
+    </div>
+    <div class="column__4">
+      <p style="font-weight: bold;">Useful Links </p>
+      <p> Get JioFiber</p>
+      <p>JioAutoPay </p>
+     
+    </div>
+    <div class="column__4">
+      <p style="font-weight: bold;"> </p>
+      <p>
+        <img src="s.png">
+      </p>
+     
+    </div>
+  </div>
+  <div class="footer__row__3">
+    <div class="dropdown__container">
+      <i class="fas fa-globe"></i>
+     
+    </div>
+  </div>
+  <div class="footer__row__4">
+    <p></p>
+  </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
